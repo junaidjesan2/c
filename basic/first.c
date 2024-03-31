@@ -2,7 +2,7 @@
 
 int main()
 {
-    int rahim, kahim ;
+  int rahim, kahim ;
     scanf("%c %d",&rahim , &kahim);
 
     printf("%c %d", rahim, kahim);
