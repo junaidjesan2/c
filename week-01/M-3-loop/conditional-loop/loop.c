@@ -28,7 +28,8 @@ int main()
         sum += i;
         if (sum >500)
         {
-            break;
+            // break;
+            continue;;
         }
         
     }
