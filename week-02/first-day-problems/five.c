@@ -6,13 +6,15 @@ int main()
     scanf("%c",&character);
     if (character >=97 && character<=122)
     {
-        int answer=character-32;
-        printf("%c",answer);
+        printf("ALPHA\nIS SMALL");
+    }
+    else if (character >=65 && character<=90)
+    {
+        printf("ALPHA\nIS CAPITAL");
     }
     else
     {
-        int answer2=character+32;
-        printf("%c",answer2);
+        printf("IS DIGIT");
     }
     
     
