@@ -2,38 +2,31 @@
 
 int main()
 {  
-    int n,k=1;
+    int n;
     scanf("%d",&n);
     int j[n];
     for (int i = 0; i < n; i++)
     {
         scanf("%d",&j[i]);
     }
-    int x;
-    scanf("%d",&x);
-    int matched=0;
 
     for (int i =0; i < n-1; i++)
     {
         for (int c = i+1; c <n ; c++)
         {
-            int sum= j[i]+j[c];
-            if (sum==x)
+            if (j[i]<j[c])
             {
-                matched=1;
+                int tmp=j[i];
+                j[i]=j[c];
+                j[c]=tmp;
             }
+            
         }
     }
-
-        if (matched==0)
-        {
-            printf("NO\n");
-        }
-        else
-        {
-            printf("YES\n");
-        }
-    
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d\n",j[i]);
+    }
     
     return 0;
 }
