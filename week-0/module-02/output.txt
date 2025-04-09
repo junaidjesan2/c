@@ -1,1 +1,2 @@
-Both are even
+A is positive number
+B is negative number
