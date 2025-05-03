@@ -12,12 +12,11 @@ int main()
             printf(" ");
         }
 
-        for (int j = 1; j <= star; j++)
+        for (int j = 1; j <= i; j++)
         {
             printf("*");
         }
         printf("\n");
-        star += 2;
     }
 
     return 0;
